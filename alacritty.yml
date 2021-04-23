@@ -2,18 +2,19 @@ font:
   size:
     32
 cursor:
-  blinking: on
-  blink_interval: 100
+  style:
+    blinking: On
+    blink_interval: 1
 window:
   startup_mode: SimpleFullscreen
   padding:
-    x: 130
-    y: 130
+    x: 40
+    y: 40
 background_opacity: 0.9
 key_bindings:
-  - { key: Space,  mods: Shift|Command,     action: ToggleViMode}
+  - { key: B,  mods: Super|Shift, mode: ~Search,     action: ToggleViMode}
   #- { key: Copy,                                        action: Copy           }
-  #- { key: L,         mods: Control,                    action: ClearLogNotice }
+  - { key: L,         mods: Super,                    action: ClearLogNotice }
   #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
   #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
   #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
